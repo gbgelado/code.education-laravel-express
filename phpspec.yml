@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: CodeTeste
+        psr4_prefix: CodeTeste
+        src_path: app
