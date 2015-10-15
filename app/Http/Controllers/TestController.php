@@ -1,10 +1,10 @@
 <?php
 
-namespace CodeTeste\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use CodeTeste\Http\Requests;
-use CodeTeste\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class TestController extends Controller
 {
