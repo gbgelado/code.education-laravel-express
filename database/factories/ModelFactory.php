@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -10,7 +9,6 @@
 | database. Just tell the factory how a default model should look.
 |
 */
-
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
@@ -20,14 +18,22 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
+    $title = $faker->sentence();
     return [
-        'title' => $faker->sentence,
-        'content' => $faker->paragraph
+        'title' => $title,
+        'content' => $faker->paragraphs(mt_rand(3, 8), true),
     ];
 });
-
+$factory->define(App\Comment::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'email' => $faker->email,
+        'comment' => $faker->sentence(),
+        'post_id' => mt_rand(1, 25)
+    ];
+});
 $factory->define(App\Tag::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->word
+        'name' => $faker->word,
     ];
 });
