@@ -1,7 +1,9 @@
 <?php
+
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -16,7 +18,7 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
         $this->call(PostTableSeeder::class);
-        $this->call(CommentTableSeeder::class);
+        // $this->call(CommentTableSeeder::class);
         $this->call(TagTableSeeder::class);
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');

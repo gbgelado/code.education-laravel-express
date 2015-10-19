@@ -6,12 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreatePostsTable' => $baseDir . '/database/migrations/2015_10_13_233351_create_posts_table.php',
+    'CommentTableSeeder' => $baseDir . '/database/seeds/CommentTableSeeder.php',
     'CreateCommentsTable' => $baseDir . '/database/migrations/2015_10_15_211921_create_comments_table.php',
+    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePostTagTable' => $baseDir . '/database/migrations/2015_10_19_202350_create_post_tag_table.php',
+    'CreatePostTagsTable' => $baseDir . '/database/migrations/2015_10_19_201327_create_post_tags_table.php',
+    'CreatePostsTable' => $baseDir . '/database/migrations/2015_10_13_233351_create_posts_table.php',
     'CreateTagsTable' => $baseDir . '/database/migrations/2015_10_15_213605_create_tags_table.php',
-    'CreateTagsPostsTable' => $baseDir . '/database/migrations/2015_10_15_213805_create_tags_posts_table.php',
+    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
@@ -480,10 +482,7 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
-    'CommentTableSeeder' => $baseDir . '/database/seeds/CommentTableSeeder.php',
-    'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'PostTableSeeder' => $baseDir . '/database/seeds/PostTableSeeder.php',
-    'TagTableSeeder' => $baseDir . '/database/seeds/TagTableSeeder.php',
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',
     'SebastianBergmann\\Comparator\\ComparisonFailure' => $vendorDir . '/sebastian/comparator/src/ComparisonFailure.php',
@@ -521,6 +520,7 @@ return array(
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Resources/stubs/SessionHandlerInterface.php',
+    'TagTableSeeder' => $baseDir . '/database/seeds/TagTableSeeder.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
 );
